@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Monisha K</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div><strong>Monisha K</strong></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="theme-toggle">🌙</div>
+</header>
+
+<section class="hero">
+  <img src="monisha.jpeg" alt="Profile Photo">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Monisha K</span></h1>
+    <p>Aspiring Developer • Passionate Learner • Project Builder</p>
+    <button class="resume-btn" onclick="downloadResume()">Download Resume</button>
+  </div>
+</section>
+
+<!-- Resume Modal -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('resumeModal')">&times;</span>
+      <iframe src="resume.pdf" width="100%" height="500px"></iframe>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
