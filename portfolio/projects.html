@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Monisha K</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div><strong>Monisha K</strong></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="theme-toggle">🌙</div>
+</header>
+
+<section class="section-card">
+<h2>Projects</h2>
+
+<div class="grid-container">
+
+  <!-- Project 1 -->
+  <div class="project-card">
+    <h1>Smart Healthcare Appointment Scheduling Website</h1>
+    <p>A modern appointment scheduling website that streamlines doctor–patient 
+      interactions by providing optimized time slots, real-time availability, and an easy booking interface.</p>
+    <button onclick="openProject('https://g.co/gemini/share/69322c922bdd')">
+      View Project
+    </button>
+    <button onclick="showImage('doctor.jpeg')">
+        View Image
+    </button>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-card">
+    <h1>My Portfolio - Web Developer Showcase</h1>
+    <p>A modern and fully responsive portfolio built using HTML, CSS, and JavaScript to showcase 
+      my skills, projects, and achievements.</p>
+    <button onclick="openProject('https://your-portfolio-link.com')">
+      View Project
+    </button>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-card">
+    <h1>Arduino-Powered Smoke Monitoring and Alert System</h1>
+    <p>An IoT-enabled smoke detection system using Arduino that detects smoke and sends alerts via network connectivity for remote monitoring.An IoT-enabled smoke detection system 
+      using Arduino that detects smoke and sends alerts via network connectivity for remote monitoring.</p>
+    <button onclick="openProject('C:\Users\MONISKA.K\Downloads')">
+      Watch Video
+    </button>
+  </div>
+
+</div>
+</section>
+
+<!-- </section>   section-card ends here -->
+
+<!-- Popup goes here (OUTSIDE the section) -->
+<div id="imagePopup" onclick="closeImage()" 
+     style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); 
+            justify-content:center; align-items:center; z-index:999;">
+  <img id="popupImg" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+
+<!-- Script also goes here -->
+<script>
+function showImage(path) {
+  document.getElementById("popupImg").src = path;
+  document.getElementById("imagePopup").style.display = "flex";
+}
+
+function closeImage() {
+  document.getElementById("imagePopup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+<script>
+// Opens the provided link in a new browser tab
+function openProject(link) {
+    window.open(link, "_blank");
+}
+</script>

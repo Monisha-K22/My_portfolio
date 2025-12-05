@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications | Monisha K</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div><strong>Monisha K</strong></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="theme-toggle">🌙</div>
+</header>
+
+<section class="section-card">
+    <h2>Certifications</h2>
+    <div class="certificate-grid grid-container">
+        <div class="certificate-card grid-card">
+            <h3>National level Ideathon</h3>
+            <button onclick="showCertificate(1)">View Certificate</button>
+        </div>
+        <div class="certificate-card grid-card">
+            <h3>Scratch(Certification of Participation)</h3>
+            <button onclick="showCertificate(2)">View Certificate</button>
+        </div>
+        <div class="certificate-card grid-card">
+            <h3>Idea Harvest'24-AURA 3.0</h3>
+            <button onclick="showCertificate(3)">View Certificate</button>
+        </div>
+        <div class="certificate-card grid-card">
+            <h3>Scratch(Certification of Apprecation)</h3>
+            <button onclick="showCertificate(4)">View Certificate</button>
+        </div>
+        <div class="certificate-card grid-card">
+            <h3>NPTEL</h3>
+            <button onclick="showCertificate(5)">View Certificate</button>
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Modals -->
+<div class="modal" id="certificateModal1">
+    <div class="modal-content">
+        <span class="close" onclick="closeCertificate(1)">&times;</span>
+        <img src="certificate1.jpeg" alt="Certificate 1">
+    </div>
+</div>
+
+<div class="modal" id="certificateModal2">
+    <div class="modal-content">
+        <span class="close" onclick="closeCertificate(2)">&times;</span>
+        <img src="certificate2.jpeg" alt="Certificate 2">
+    </div>
+</div>
+
+<div class="modal" id="certificateModal3">
+    <div class="modal-content">
+        <span class="close" onclick="closeCertificate(3)">&times;</span>
+        <img src="certificate3.jpeg" alt="Certificate 3">
+    </div>
+</div>
+
+<div class="modal" id="certificateModal4">
+    <div class="modal-content">
+        <span class="close" onclick="closeCertificate(4)">&times;</span>
+        <img src="certificate4.jpeg" alt="Certificate 4">
+    </div>
+</div>
+
+<div class="modal" id="certificateModal5">
+    <div class="modal-content">
+        <span class="close" onclick="closeCertificate(5)">&times;</span>
+        <img src="certificate5.jpeg" alt="Certificate 5">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
